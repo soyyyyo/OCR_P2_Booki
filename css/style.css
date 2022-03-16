@@ -83,12 +83,6 @@ nav a {
   padding: 0 15px;
 }
 
-.container-not {
-  max-width: 1300px;
-  margin: auto;
-  padding: 0 15px;
-}
-
 /* END GLOBAL */
 
 /* HEADER ---------- */
@@ -272,12 +266,15 @@ button div {
   margin: 0px 25px 0px 0px;
 }
 
-#hebergement .container-2
+#hebergement .container
 {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
+  max-width: auto;
+  margin: 0;
+  padding: 0 0;
 }
 
 #hebergement h2 {
@@ -370,7 +367,7 @@ button div {
   border-radius: 30px;
 }
 
-#populaire .container-2
+#populaire .container
 {
   height: auto;
   display: flex;
@@ -378,6 +375,9 @@ button div {
   justify-content: flex-start;
   flex-direction: column;
   align-items: center;
+  max-width: auto;
+  margin: auto;
+  padding: 0px 0px;
 }
 
 .header-pop {
@@ -880,7 +880,8 @@ footer a {
     font-size: 2rem;
   }
 
-  .container-not {
+  .nopadding
+  {
     max-width: auto;
     margin: 0;
     padding: 0 0px;
