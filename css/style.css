@@ -54,6 +54,7 @@ h3 {
   font-size: 1.7rem;
   margin-block-end: 0px;
   margin-block-start: 0px;
+  line-height: 1.2;
 }
 
 h4 {
@@ -77,6 +78,12 @@ nav a {
 }
 
 .container {
+  max-width: 1300px;
+  margin: auto;
+  padding: 0 15px;
+}
+
+.container-not {
   max-width: 1300px;
   margin: auto;
   padding: 0 15px;
@@ -137,10 +144,10 @@ header nav a:hover {
 
 #dot {
   width: 40px;
-  height: 40px;
+  height: 50px;
   background-color: #f2f2f2;
   border-radius: 45px 0px 0px 45px;
-  padding: 10px 10px 10px 15px;
+  padding: 15px 10px 10px 15px;
   font-size: 2rem;
 }
 
@@ -155,7 +162,7 @@ label {
 
 input {
   width: 400px;
-  height: 40px;
+  height: 50px;
   border: 1px #f2f2f2 solid;
   font-size: 1.8rem;
   padding-left: 10px;
@@ -163,7 +170,7 @@ input {
 
 button {
   width: auto;
-  height: 40px;
+  height: 50px;
   background-color: #0065fc;
   color: white;
   border: 1px #0065fc solid;
@@ -204,6 +211,12 @@ button div {
   font-size: 1.6rem;
 }
 
+#filtre a:hover {
+  background-color: #deebff;
+  border-radius: 30px;
+  border: 1px #deebff solid;
+}
+
 /* Peaufinage du centrage */
 #filtre span {
   padding-top: 3px;
@@ -219,11 +232,6 @@ button div {
   position: relative;
   right: 11px;
   color: #0065fc;
-}
-
-#filtre a:hover {
-  background-color: #deebff;
-  border-radius: 30px;
 }
 
 .infos {
@@ -259,13 +267,17 @@ button div {
 
 #hebergement {
   width: 80%;
+  background: #f2f2f2;
+  border-radius: 30px;
+  margin: 0px 25px 0px 0px;
+}
+
+#hebergement .container-2
+{
   display: flex;
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
-  border-radius: 30px;
-  margin: 0px 25px 0px 0px;
-  background: #f2f2f2;
 }
 
 #hebergement h2 {
@@ -319,7 +331,7 @@ button div {
 
 #hebergement .card-description {
   width: 100%;
-  padding: 2px 0px 10px 5px;
+  padding: 5px 0px 10px 5px;
   flex: 1 1 0;
   display: flex;
   flex-direction: column;
@@ -354,9 +366,13 @@ button div {
 
 #populaire {
   width: 40%;
-  height: auto;
   background-color: #f2f2f2;
   border-radius: 30px;
+}
+
+#populaire .container-2
+{
+  height: auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
@@ -609,11 +625,11 @@ footer a {
 
   #hebergement .card-description {
     justify-content: space-between;
-    height: 47%;
+    height: 50%;
   }
 
   #hebergement .card-image {
-    height: 60%;
+    height: 58%;
   }
 
   .infos {
@@ -723,6 +739,17 @@ footer a {
     margin-top: 0px;
   }
 
+  body > .container
+  {
+    padding: 0;
+  }
+
+  header nav a 
+  {
+    border-bottom: 3px #f2f2f2 solid;
+  
+  }
+
   header nav a:hover {
     border-bottom: 3px blue solid;
     border-top: none;
@@ -772,7 +799,8 @@ footer a {
   #hebergement .cards {
     flex-direction: column;
     width: 100%;
-    padding: 0px;
+    padding: 15px;
+    margin: 0;
   }
 
   #hebergement a {
@@ -789,8 +817,14 @@ footer a {
     height: 60%;
   }
 
+  /* #hebergement .card-description {
+    justify-content: space-between;
+    height: 30%;
+  } */
+
   #hebergement .card-description {
     justify-content: space-between;
+    height: 47%;
   }
 
   #populaire {
@@ -801,6 +835,7 @@ footer a {
   #populaire .cards {
     width: 100%;
     padding: 0 15px 0 15px;
+    margin: 0 0 40px 0;
   }
 
   #populaire article {
@@ -837,11 +872,19 @@ footer a {
     width: 100%;
   }
 
-  footer {
-    font-size: 1.2rem;
+  footer a {
+    font-size: 2rem;
   }
 
-  .container-2 {
-    width: 100%;
+  footer  {
+    font-size: 2rem;
+  }
+
+  .container-not {
+    max-width: auto;
+    margin: 0;
+    padding: 0 0px;
+  }
+  
   }
 }
